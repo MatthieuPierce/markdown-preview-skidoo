@@ -10,10 +10,11 @@ class Preview extends React.Component {
   }
 
   produceMarkup = (content) => {
-    let regex = /(\r\n|\r|\n)/
-    let carriageFixed = content.replace(regex, `<br />`);
+    let markedOptions = {
+      breaks: true
+    }
     return {
-      __html: DOMPurify.sanitize(marked(carriageFixed))
+      __html: DOMPurify.sanitize(marked(content, markedOptions))
     }
   }
 
