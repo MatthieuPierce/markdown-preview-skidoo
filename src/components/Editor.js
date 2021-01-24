@@ -3,8 +3,6 @@ import { connect } from 'react-redux';
 import { changeInput } from '../redux/actions/changeInput.js'
 import './Editor.css'
 
-const initialText = `#habba jabba wowza woo`;
-
 class Editor extends React.Component {
   constructor(props) {
     super(props);

@@ -1,7 +1,8 @@
-import { CHANGETEXT } from '../constants.js'
+import { CHANGETEXT } from '../constants.js';
+import markdownQuickReference from '../../markdownQuickReference';
 
 const startingState = {
-  editorText: 'markup examples go here'
+  editorText: markdownQuickReference
 }
 
 const rootReducer = function(state = startingState, action) {
