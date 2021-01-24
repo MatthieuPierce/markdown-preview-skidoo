@@ -10,7 +10,7 @@ class Preview extends React.Component {
   }
 
   produceMarkup = (content) => {
-    let lineBreakRegex = new RegExp(`(?<=[\w.!?\\-])[\n\r\f]`, 'gi');
+    let lineBreakRegex = new RegExp(`(?<=[\w.!?\\-\*\s])[\n\r\f\v]`, 'gi');
     let carriageFixed = content.replace(lineBreakRegex, `<br />`);
     // let carriageFixed = content;
     return {
@@ -20,12 +20,16 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div > 
-        <h2>Markdown Preview</h2>
+      <div id="preview-wrapper">
+        <header>
+          <h2>Markdown Preview</h2>
+        </header> 
         <div id="preview" dangerouslySetInnerHTML={this.produceMarkup(this.props.editorText)}></div>
-        <h2>Raw editorText</h2>
-        <div id="rawEditorText">{this.props.editorText}</div>
+        <div><h2>raw editorText</h2>
+         <code>{this.props.editorText}</code>
+        </div>
       </div>
+      
     )
   }
 }

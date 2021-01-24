@@ -16,10 +16,10 @@ class Editor extends React.Component {
 render() {
 
   return (
-
-    <textarea id="editor" className="editorInput" type="text" onChange={(event) => this.handleChange(event)} value={this.props.editorText}></textarea>
-
-
+    <div className="editor-wrapper">
+      <header><h2>Markdown Editor</h2></header>
+      <div><textarea id="editor" className="editorInput" type="text" onChange={(event) => this.handleChange(event)} value={this.props.editorText}></textarea></div>
+    </div>
   );
 
 }

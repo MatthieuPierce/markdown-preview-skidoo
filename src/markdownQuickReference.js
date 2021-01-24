@@ -1,7 +1,7 @@
 const markdownQuickReference = 
 `*stars* or _underscores_ for italics.
- **Double stars** 
-__double underscores__ for bold. 
+ **Double stars** or
+  __double underscores__ for bold. 
 ***Three together*** for ___both___.
 
 Paragraphs are pretty easy too. Just have a blank line between chunks of text.
@@ -38,7 +38,6 @@ Images work exactly like links, but they have exclamation points in front. They 
 
 > This chunk of text is in a block quote. Its multiple lines will all be
 > indented a bit from the rest of the text.
->
 > > Multiple levels of block quotes also work.
 
 Code: If you want to include code and have new
