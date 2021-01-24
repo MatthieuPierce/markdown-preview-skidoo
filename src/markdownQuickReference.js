@@ -31,7 +31,8 @@ Blockquotes
 
 Code: If you want to include code and have new lines preserved, indent the line with a tab or at least four spaces:
 
-    The text will stay as text, so any *markdown* or <u>HTML</u>
+    The text will stay as text, 
+    so any *markdown* or <u>HTML</u>
     
 This is inline code: \`inline code\`
 `;
