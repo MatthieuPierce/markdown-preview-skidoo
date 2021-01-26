@@ -1,0 +1,20 @@
+.preview-wrapper {
+  /* box-sizing: border-box; */
+
+}
+
+#preview {
+  box-sizing: border-box;
+  border: 0.5rem dashed blue;
+  border-radius: 2rem;
+  padding: 1rem;
+  border-image: linear-gradient(#e66465, #9198e5) 1;
+  /* background: white; */
+}
+
+.preview-header {
+  background: linear-gradient(to right, #e66465, #9198e5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
