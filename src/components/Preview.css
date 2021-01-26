@@ -1,7 +1,3 @@
-.preview-wrapper {
-  /* box-sizing: border-box; */
-
-}
 
 #preview {
   box-sizing: border-box;
@@ -9,7 +5,7 @@
   border-radius: 2rem;
   padding: 1rem;
   border-image: linear-gradient(#e66465, #9198e5) 1;
-  /* background: white; */
+  background: white;
 }
 
 .preview-header {
