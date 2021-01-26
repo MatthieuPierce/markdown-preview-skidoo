@@ -14,7 +14,7 @@ Paragraphs: place a blank line between chunks of text.
 
 This is a URL:  <https://www.github.com>.
 This is an inline link to [Google](https://www.google.com). 
-Images work exactly like links, but they have exclamation points in front.
+Images work exactly like links, but they have exclamation points in front:
 ![Google Logo](https://www.google.com/images/errors/logo_sm.gif)
 
 * This is a bulleted list
@@ -22,19 +22,19 @@ Images work exactly like links, but they have exclamation points in front.
 - You can also use hyphens
 + Or plus symbols
 
-Blockquotes
-> This chunk of text is in a block quote. Its multiple lines will all be
+Blockquotes:
+> This chunk of text is in a block quote. Multiple lines will be
 > indented a bit from the rest of the text.
 > > Multiple levels of block quotes also work.
->     You can also use preformatted text with your blockquotes
->     as long as you add at least five spaces.
 
 Code: If you want to include code and have new lines preserved, indent the line with a tab or at least four spaces:
 
     The text will stay as text, 
-    so any *markdown* or <u>HTML</u>
+    including any *markdown* or <u>HTML</u>
     
 This is inline code: \`inline code\`
+
+This sample text was lovingly derived from the [Marked.js Markdown Reference](https://marked.js.org)
 `;
 
 export default markdownQuickReference;
