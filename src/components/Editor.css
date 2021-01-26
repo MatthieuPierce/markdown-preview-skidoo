@@ -1,11 +1,37 @@
-#editor {
+.editor-wrapper {
+  display: flex;
+  flex-flow: column;
   box-sizing: border-box;
+  /* background: border-box pink; */
+
+}
+
+.textarea-container {
+  flex: 1 1 auto;
+  box-sizing: border-box;
+  height: 100%;
+  grid-template-rows: 1fr;
+
+}
+
+#editor {
+  display: block;
+  box-sizing: border-box;
+  border: 0.5rem dashed gray;
+  border-radius: 2rem;
+  border-image: linear-gradient(lightgray 10%, darkgray 20%, black) 1;
   margin: 0;
-  padding: 0.5rem;
-  height: 50vh;
+  padding: 1rem;
+  height: 45vh;
   width: 100%;
-  border: 0;
-  box-shadow: 0rem 1rem rgba(155, 155, 155, 0.5);
+  /* box-shadow: 0rem 1rem rgba(155, 155, 155, 0.5); */
   outline: none;
-  resize: none;
+  resize: both;
+}
+
+
+@media (min-width: 731px) {
+  #editor {
+    height: 100%;
+  }
 }

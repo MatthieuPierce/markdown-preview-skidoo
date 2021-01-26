@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import marked from 'marked';
 import DOMPurify from 'dompurify';
+import './Preview.css'
 
 class Preview extends React.Component {
   constructor(props) {
@@ -20,9 +21,9 @@ class Preview extends React.Component {
 
   render() {
     return (
-      <div id="preview-wrapper">
-        <header>
-          <h2>Markdown Preview</h2>
+      <div className="preview-wrapper">
+        <header className="preview-header">
+          <h2>Markdown HTML Preview</h2>
         </header> 
         <div id="preview" dangerouslySetInnerHTML={this.produceMarkup(this.props.editorText)}></div>
         {/* <div><h2>raw editorText</h2>

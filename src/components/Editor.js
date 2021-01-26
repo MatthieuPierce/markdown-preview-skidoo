@@ -18,7 +18,9 @@ render() {
   return (
     <div className="editor-wrapper">
       <header><h2>Markdown Editor</h2></header>
-      <div><textarea id="editor" className="editorInput" type="text" onChange={(event) => this.handleChange(event)} value={this.props.editorText}></textarea></div>
+      <div className="textarea-container">
+        <textarea id="editor" className="editorInput" type="text" onChange={(event) => this.handleChange(event)} value={this.props.editorText}></textarea>
+      </div>
     </div>
   );
 
